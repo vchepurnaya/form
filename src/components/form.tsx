@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Modal from './modal';
 import './styles.css';
 import { StoreContext } from '../store';
-import { useObserver } from 'mobx-react';
 
 const Form: React.FC = () => {
   const [firstName, setFirstName] = useState<string>('');
