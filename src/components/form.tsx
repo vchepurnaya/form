@@ -43,7 +43,7 @@ const Form: React.FC = () => {
     }
   };
 
-  const openModal = (e: React.MouseEvent<HTMLButtonElement>): any => {
+  const openModal = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setOpen(true);
     store.addFirstName(firstName);

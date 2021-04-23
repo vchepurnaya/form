@@ -4,8 +4,8 @@ import { useLocalStore } from 'mobx-react';
 type ContextType = {
   firstName: string;
   lastName: string;
-  addFirstName: any;
-  addLastName: any;
+  addFirstName: (firstName: string) => void;
+  addLastName: (lastName: string) => void;
 };
 
 export const StoreContext = React.createContext<ContextType>({
